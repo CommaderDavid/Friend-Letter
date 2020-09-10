@@ -6,14 +6,21 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>Fill in your name and your friend's name to create your custom postcard!</h1>
+    <h1>Fill in your name, your friend's name, your current vacation location and complaints, along with a souvenir, to create your custom postcard!</h1>
     <form action="/postcard" method="post">
      <label for="sender">Sender's Name</label>
      <input id="sender" name="sender" type="text">
      <label for="recipient">Recipient's Name</label>
      <input id="recipient" name="recipient" type="text">
+     <label for="start">Sender's Starting Location</label>
+     <input id="start" name="start" type="text">
+     <label for="complaint">Sender's Complaint of Current Location</label>
+     <input id="complaint" name="complaint" type="text">
+     <label for="wish">Sender's Wish Location</label>
+     <input id="wish" name="wish" type="text">
+     <label for="souvenir">Sender's Souvenir</label>
+     <input id="souvenir" name="souvenir" type="text">
      <button type="submit">Go!</button>
-     @* need to create ids for locations and items to send to user *@
     </form>
   </body>
 </html>

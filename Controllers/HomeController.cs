@@ -29,6 +29,10 @@ namespace FriendLetter.Controllers
             LetterVariable myLetterVariable = new LetterVariable();
             myLetterVariable.Recipient = recipient;
             myLetterVariable.Sender = sender;
+            myLetterVariable.Start = start;
+            myLetterVariable.Complaint = complaint;
+            myLetterVariable.Wish = wish;
+            myLetterVariable.Souvenir = souvenir;
             return View(myLetterVariable);
         }
     }
